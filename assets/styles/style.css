@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background-color: #FFEAD4;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100vw;
+}
+
+.header__lettering {
+    animation: lettering-fill .5s ease-in-out forwards 4s;
+    fill: transparent;
+    left: 50%;
+    margin-top: 10%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 80%;
+}
+
+.header__lettering path {
+    animation: lettering-dotted 5s ease-in-out forwards 1s;
+    stroke: #BE253F;
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    stroke-width: 2px;
+}
+
+@keyframes lettering-fill {
+    to {
+        fill: #BE253F;
+    }
+}
+
+@keyframes lettering-dotted {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
