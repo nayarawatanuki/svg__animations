@@ -1,39 +1,32 @@
+@import url(base/variables.css);
+
+@import url(home/header.css);
+@import url(components/cards.css);
+@import url(home/footer.css);
+
 body {
     margin: 0;
-    background-color: #FFEAD4;
+    background-color: var(--body);
     overflow-x: hidden;
 }
 
-.header {
-    width: 100vw;
+h1, h2 {
+    color: var(--title-color);
+    font-family: var(--font-title);
+    text-align: center;
 }
 
-.header__lettering {
-    animation: lettering-fill .5s ease-in-out forwards 4s;
-    fill: transparent;
-    left: 50%;
-    margin-top: 10%;
-    position: absolute;
-    transform: translate(-50%);
-    width: 80%;
+h1 {
+    font-size: 3em;
 }
 
-.header__lettering path {
-    animation: lettering-dotted 5s ease-in-out forwards 1s;
-    stroke: #BE253F;
-    stroke-dasharray: 3000;
-    stroke-dashoffset: 3000;
-    stroke-width: 2px;
+h2 {
+    font-size: 1.5em;
 }
 
-@keyframes lettering-fill {
-    to {
-        fill: #BE253F;
-    }
+p {
+    color: var(--text-color);
+    font-family: var(--font-text);
+    font-size: 1em;
 }
 
-@keyframes lettering-dotted {
-    to {
-        stroke-dashoffset: 0;
-    }
-}

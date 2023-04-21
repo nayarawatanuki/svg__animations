@@ -1,0 +1,13 @@
+.container-cards {
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    width: 50%;
+}
